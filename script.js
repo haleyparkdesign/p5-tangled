@@ -31,7 +31,7 @@ function setup() {
     c1 = color('rgba(16, 17, 36, 0.5)');
     c2 = color('rgb(24, 11, 77)');
 
-    f1 = color('rgba(235, 111, 20, 0.62)');
+    f1 = color('rgba(216, 91, 0, 0.8)');
     f2 = color('rgba(255, 227, 163, 0.2)');
 
     lantern = new Lantern(random(width), -40);
@@ -105,7 +105,7 @@ function Lantern(x, y, factor) {
         ellipse(this.pos.x, this.pos.y + factor / 2, factor * 2, factor * 2);
 
         //top
-        fill(color('rgba(235, 111, 20, 0.9)'));
+        fill(color('rgba(216, 91, 0, 1)'));
         ellipse(this.pos.x, this.pos.y, factor, factor / 2);
 
         setGradient(this.pos.x - factor / 2, this.pos.y, factor - 1, factor, f1, f2, Y_AXIS);
